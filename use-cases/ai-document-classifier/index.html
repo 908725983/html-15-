@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Document Classifier — Auto-Tag, Sort & Route Documents Instantly | COCO</title>
+  <meta name="description" content="Intelligent document processing software — auto-classify and sort documents by type, topic, and priority. Custom taxonomies, metadata extraction, and instant routing. 95%+ accuracy. See plans and pricing.">
+
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI Document Classifier — Auto-Tag, Sort & Route 500K+ Documents Per Month | COCO">
+  <meta property="og:description" content="Intelligent document processing software — auto-classify by type, topic, language, and priority. Custom taxonomies, metadata extraction, instant routing. 95%+ accuracy. 200+ file formats.">
+  <meta property="og:url" content="https://docs.coco.xyz/use-cases/ai-document-classifier/">
+  <meta property="og:image" content="https://docs.coco.xyz/og/use-cases/ai-document-classifier.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CocoAIxyz">
+  <meta name="twitter:title" content="AI Document Classifier — Auto-Tag, Sort & Route Documents | COCO">
+  <meta name="twitter:description" content="Intelligent document processing software — auto-classify by type, topic, language, and priority. Instant routing. 200+ file formats.">
+  <meta name="twitter:image" content="https://docs.coco.xyz/og/use-cases/ai-document-classifier.jpg">
+
+  <link rel="canonical" href="https://docs.coco.xyz/use-cases/ai-document-classifier/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "COCO AI",
+    "url": "https://docs.coco.xyz",
+    "description": "Hire AI digital employees for web, Telegram, and Lark. Deploy autonomous AI workers and manage your AI team from a single dashboard.",
+    "sameAs": ["https://github.com/coco-xyz","https://twitter.com/CocoAIxyz","https://t.me/CocoAIxyz"]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.coco.xyz/"},
+      {"@type": "ListItem", "position": 2, "name": "Use Cases", "item": "https://docs.coco.xyz/use-cases/"},
+      {"@type": "ListItem", "position": 3, "name": "AI Document Classifier", "item": "https://docs.coco.xyz/use-cases/ai-document-classifier/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI Document Classifier: Auto-Tag, Sort & Route 500K+ Documents Per Month",
+    "description": "Deploy an AI document classifier that auto-tags, sorts, and routes documents by type, topic, department, language, and priority. OCR processes scans in 50+ languages, custom taxonomies are defined in plain language, and metadata extraction feeds structured JSON to downstream systems.",
+    "image": ["https://docs.coco.xyz/og/use-cases/ai-document-classifier.jpg"],
+    "datePublished": "2026-06-03",
+    "dateModified": "2026-06-03",
+    "author": {"@type": "Organization", "name": "COCO Engineering"},
+    "publisher": {"@type": "Organization", "name": "COCO", "logo": {"@type": "ImageObject", "url": "https://docs.coco.xyz/images/logo.png"}},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://docs.coco.xyz/use-cases/ai-document-classifier/"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an AI document classifier and how does it work?",
+        "acceptedAnswer": {"@type": "Answer", "text": "An AI document classifier is an autonomous AI employee that auto-tags, sorts, and routes documents based on their content — not just file names or folder locations. It ingests documents in 200+ formats (PDF, Word, Excel, images, scanned documents, emails, JSON), runs OCR on scanned and image-based documents in 50+ languages, and classifies each document by type, topic, department, language, priority, and custom taxonomy categories defined by your team in natural language. Unlike rules-based taggers that rely on keyword matching and break when document formats or terminology change, COCO's AI document classifier reads and understands document content — it distinguishes an NDA from an MSA, an invoice from a receipt, a W-4 from an I-9, even when document titles are ambiguous or missing. The classifier then extracts key metadata (dates, amounts, party names, contract numbers, invoice IDs, PO numbers) as structured JSON and routes each document to the right team, folder, or downstream system (SharePoint, NetSuite, Salesforce, Workday). Operations teams go from spending 30 minutes manually sorting a single document to processing 500K+ documents per month with 95%+ accuracy and under 2 seconds per document."}
+      },
+      {
+        "@type": "Question",
+        "name": "What file formats does the AI Document Classifier support?",
+        "acceptedAnswer": {"@type": "Answer", "text": "COCO's AI Document Classifier supports 200+ file formats, covering virtually every document type encountered in business operations. Core office formats include PDF, DOCX, XLSX, PPTX, RTF, ODT, and ODS. Image formats include JPG, PNG, TIFF, BMP, and GIF — with built-in OCR that extracts text from image-based and scanned documents in 50+ languages. Email formats include EML, MSG, and MBOX, enabling classification of email bodies and attachments. Structured and semi-structured formats include JSON, XML, CSV, and TSV. For specialized document types, the classifier handles CAD files, engineering drawings, and compressed archives (ZIP, RAR). OCR accuracy on printed documents reaches 98%+; handwritten documents achieve 85-92% accuracy depending on legibility. Scanned documents with significant skew, noise, or damage may require manual review for metadata fields where precision is critical (e.g., dollar amounts on invoices). The classifier also handles multi-page documents, where classification is based on the full document content rather than just the first page."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can I create my own custom taxonomy or classification categories?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes — and this is one of COCO's core differentiators. You define your classification taxonomy in natural language, not code. Describe your categories as you would to a new team member: 'Invoices are documents that request payment from a vendor and contain an invoice number, date, line items, and total amount due. NDAs are legal documents that establish confidentiality obligations between two or more parties.' The AI understands these natural-language descriptions and classifies accordingly. You can build hierarchical taxonomies — by department (Finance, Legal, HR, Operations), document type (Invoice, Contract, Report, Form), compliance category (SOX-relevant, GDPR-relevant, Retention-7-Year), confidentiality level (Public, Internal, Confidential, Restricted), and any other dimension relevant to your organization. When your taxonomy changes — a new document category, a reorganized department structure, a new compliance requirement — simply update the description. No IT tickets, no regex rewrites, no workflow reconfiguration. Teams typically define their initial taxonomy in under 2 hours and iterate as they discover edge cases."}
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is the AI document classifier compared to manual sorting?",
+        "acceptedAnswer": {"@type": "Answer", "text": "COCO's AI Document Classifier achieves 95%+ classification accuracy in production, significantly outperforming manual sorting on both speed and consistency. Manual document sorting is inherently inconsistent — accuracy varies from 85% to 90% depending on the sorter's familiarity with the taxonomy, fatigue level, and document complexity. Two different people sorting the same document often assign it to different categories, especially for ambiguous or multi-topic documents. The AI applies the same classification logic consistently to every document, and its accuracy improves over time through continuous learning: when a team member reclassifies a document, the model updates, and accuracy typically improves by 2-4 percentage points per quarter. In production deployments across legal, finance, and HR teams, COCO's classifier reduced misrouted documents by 90% compared to manual sorting. The AI also handles edge cases that human sorters consistently miss — such as classifying a document by its content when the file name is misleading (e.g., 'scan005.pdf' that is actually a signed MSA). However, AI is not a replacement for human judgment: the recommended workflow is AI performs the exhaustive first-pass classification and routes to the appropriate queue, while team members review edge cases and provide corrections that further train the model."}
+      },
+      {
+        "@type": "Question",
+        "name": "What happens when the AI misclassifies a document?",
+        "acceptedAnswer": {"@type": "Answer", "text": "When the AI misclassifies a document, the correction process is immediate and contributes to model improvement. Any team member can reclassify a document in the COCO dashboard — select the correct category from the taxonomy, and the document is instantly rerouted to the appropriate team, folder, or system. More importantly, every reclassification is a learning signal: COCO's continuous learning engine analyzes the correction to understand why the initial classification was wrong — was the document ambiguous, was the category description unclear, was the OCR output corrupted? The model updates within 24 hours, and the same type of document is unlikely to be misclassified again. Teams typically see a 15-25% reduction in misclassifications per quarter as the AI learns their specific taxonomy and document patterns. For high-stakes documents (compliance filings, legal contracts, regulatory submissions), you can configure a confidence threshold — documents below the threshold are automatically routed to a human review queue before final classification. This human-in-the-loop approach ensures that critical documents always receive appropriate scrutiny while routine documents flow through autonomously."}
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Deploy an AI Document Classifier with COCO",
+    "description": "Step-by-step guide to deploying an AI document classifier that auto-tags, sorts, and routes documents by type, topic, and priority — no coding required.",
+    "totalTime": "PT1W",
+    "step": [
+      {
+        "@type": "HowToStep", "position": 1,
+        "name": "Connect COCO to your document sources",
+        "text": "Link COCO to your document repositories (SharePoint, Google Drive, Dropbox, email inboxes, ERP-attached documents, SFTP servers). Standard API integrations — 2 minutes, no custom development. The AI begins ingesting existing documents immediately to learn your taxonomy patterns."
+      },
+      {
+        "@type": "HowToStep", "position": 2,
+        "name": "Define your taxonomy and classification rules",
+        "text": "Describe your classification categories in natural language — by department, document type, compliance category, confidentiality level, and any custom dimensions. Upload sample documents to calibrate the AI's understanding. The AI learns the distinction between document categories from your descriptions and examples."
+      },
+      {
+        "@type": "HowToStep", "position": 3,
+        "name": "Train and calibrate (~1 week)",
+        "text": "The AI processes your historical documents and begins classifying. Your team reviews classifications, corrects misclassifications, and refines taxonomy descriptions. The AI updates its models from every correction. When accuracy meets your threshold (typically 95%+), you switch to autonomous mode."
+      },
+      {
+        "@type": "HowToStep", "position": 4,
+        "name": "Go live with automated classification",
+        "text": "COCO begins classifying and routing every inbound document autonomously. Your team monitors via the classification dashboard, reviews low-confidence documents, and provides corrections. The AI continuously learns — classification accuracy improves every week as the model learns from your team's feedback."
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root,
+    [data-theme="dark"]{
+      --bg-page:#0A0E1A; --bg-footer:#060912; --bg-nav:rgba(10,14,26,0.85);
+      --bg-surface:rgba(255,255,255,0.02); --bg-surface-strong:rgba(255,255,255,0.03);
+      --bg-surface-hover:rgba(255,184,0,0.06); --bg-code:rgba(255,184,0,0.10);
+      --bg-code-block:rgba(255,184,0,0.06); --bg-accent-soft:rgba(255,184,0,0.06);
+      --bg-accent-pill:rgba(255,184,0,0.20);
+      --bg-cta:linear-gradient(135deg,rgba(255,184,0,0.12),rgba(230,167,0,0.08));
+      --bg-step:rgba(255,255,255,0.02); --bg-highlight:rgba(34,197,94,0.06);
+      --text-strong:rgba(255,255,255,0.97); --text-primary:rgba(255,255,255,0.92);
+      --text-body:rgba(255,255,255,0.82); --text-muted:rgba(255,255,255,0.62);
+      --text-faint:rgba(255,255,255,0.5); --text-fainter:rgba(255,255,255,0.4);
+      --text-quietest:rgba(255,255,255,0.28);
+      --border-soft:rgba(255,255,255,0.06); --border-faint:rgba(255,255,255,0.04);
+      --border-accent:rgba(255,184,0,0.22); --border-accent-strong:rgba(255,184,0,0.28);
+      --border-code:rgba(255,184,0,0.16); --border-highlight:rgba(34,197,94,0.18);
+      --accent:#FFB800; --accent-hi:#FFC940; --accent-deep:#E6A700; --accent-mid:#FFB800;
+      --accent-on:#0A0E1A; --selection:rgba(255,184,0,0.3);
+      --error:#f87171; --green:#4ade80;
+    }
+
+    [data-theme="light"]{
+      --bg-page:#FFFFFF; --bg-footer:#F5F6FA; --bg-nav:rgba(255,255,255,0.88);
+      --bg-surface:rgba(15,23,42,0.025); --bg-surface-strong:rgba(15,23,42,0.04);
+      --bg-surface-hover:rgba(230,167,0,0.05); --bg-code:rgba(230,167,0,0.08);
+      --bg-code-block:rgba(230,167,0,0.04); --bg-accent-soft:rgba(230,167,0,0.06);
+      --bg-accent-pill:rgba(230,167,0,0.12);
+      --bg-cta:linear-gradient(135deg,rgba(230,167,0,0.07),rgba(163,97,0,0.04));
+      --bg-step:rgba(15,23,42,0.02); --bg-highlight:rgba(21,128,61,0.05);
+      --text-strong:#050810; --text-primary:#0F1629; --text-body:#1A2035;
+      --text-muted:#2D3548; --text-faint:#3D4558; --text-fainter:#5B6378;
+      --text-quietest:#808698;
+      --border-soft:rgba(15,23,42,0.10); --border-faint:rgba(15,23,42,0.06);
+      --border-accent:rgba(230,167,0,0.35); --border-accent-strong:rgba(230,167,0,0.50);
+      --border-code:rgba(230,167,0,0.20); --border-highlight:rgba(21,128,61,0.25);
+      --accent:#E6A700; --accent-hi:#A36100; --accent-deep:#8B5000; --accent-mid:#E6A700;
+      --accent-on:#FFFFFF; --selection:rgba(230,167,0,0.14);
+      --error:#B91C1C; --green:#15803D;
+    }
+
+    @media (prefers-color-scheme: light){
+      html:not([data-theme]){
+        --bg-page:#FFFFFF; --bg-footer:#F5F6FA; --bg-nav:rgba(255,255,255,0.88);
+        --bg-surface:rgba(15,23,42,0.025); --bg-surface-strong:rgba(15,23,42,0.04);
+        --bg-surface-hover:rgba(230,167,0,0.05); --bg-code:rgba(230,167,0,0.08);
+        --bg-code-block:rgba(230,167,0,0.04); --bg-accent-soft:rgba(230,167,0,0.06);
+        --bg-accent-pill:rgba(230,167,0,0.12);
+        --bg-cta:linear-gradient(135deg,rgba(230,167,0,0.07),rgba(163,97,0,0.04));
+        --bg-step:rgba(15,23,42,0.02); --bg-highlight:rgba(21,128,61,0.05);
+        --text-strong:#050810; --text-primary:#0F1629; --text-body:#1A2035;
+        --text-muted:#2D3548; --text-faint:#3D4558; --text-fainter:#5B6378;
+        --text-quietest:#808698;
+        --border-soft:rgba(15,23,42,0.10); --border-faint:rgba(15,23,42,0.06);
+        --border-accent:rgba(230,167,0,0.35); --border-accent-strong:rgba(230,167,0,0.50);
+        --border-code:rgba(230,167,0,0.20); --border-highlight:rgba(21,128,61,0.25);
+        --accent:#E6A700; --accent-hi:#A36100; --accent-deep:#8B5000; --accent-mid:#E6A700;
+        --accent-on:#FFFFFF; --selection:rgba(230,167,0,0.14);
+        --error:#B91C1C; --green:#15803D;
+      }
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-page);color:var(--text-body);line-height:1.6;-webkit-font-smoothing:antialiased}
+    .container{max-width:960px;margin:0 auto;padding:0 24px}
+    h1{font-size:clamp(2rem,5vw,3rem);font-weight:700;color:var(--text-strong);line-height:1.2;letter-spacing:-0.02em}
+    h2{font-size:clamp(1.5rem,3.5vw,2rem);font-weight:700;color:var(--text-strong);margin-bottom:24px;letter-spacing:-0.01em}
+    h3{font-size:1.125rem;font-weight:600;color:var(--text-primary);margin-bottom:8px}
+    p{margin-bottom:16px;color:var(--text-body);font-size:1rem}
+    a{color:var(--accent);text-decoration:none;transition:color .2s}
+    a:hover{color:var(--accent-hi)}
+    small{font-size:.8125rem;color:var(--text-faint)}
+
+    nav{position:sticky;top:0;z-index:100;background:var(--bg-nav);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border-soft)}
+    nav .nav-inner{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:960px;margin:0 auto;padding:0 24px}
+    nav .logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:1.25rem;color:var(--text-strong);text-decoration:none}
+    nav .logo img{height:28px;width:auto}
+    nav .nav-actions{display:flex;align-items:center;gap:12px}
+    nav button{background:var(--bg-surface);border:1px solid var(--border-soft);color:var(--text-body);padding:6px 14px;border-radius:8px;cursor:pointer;font-size:.8125rem;font-family:'Inter',sans-serif;transition:all .2s}
+    nav button:hover{background:var(--bg-surface-hover);border-color:var(--border-accent);color:var(--accent)}
+
+    .hero{padding:80px 0 48px;text-align:center}
+    .hero h1{margin-bottom:20px}
+    .hero .subtitle{font-size:1.15rem;color:var(--text-muted);max-width:680px;margin:0 auto 32px;line-height:1.7}
+    .hero .btn-group{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+    .btn-primary{background:var(--accent);color:var(--accent-on);border:none;padding:12px 28px;border-radius:10px;font-weight:600;font-size:.9375rem;cursor:pointer;font-family:'Inter',sans-serif;text-decoration:none;display:inline-block;transition:all .2s}
+    .btn-primary:hover{background:var(--accent-hi);color:var(--accent-on)}
+    .btn-outline{background:transparent;color:var(--accent);border:1.5px solid var(--border-accent);padding:12px 28px;border-radius:10px;font-weight:600;font-size:.9375rem;cursor:pointer;font-family:'Inter',sans-serif;text-decoration:none;display:inline-block;transition:all .2s}
+    .btn-outline:hover{background:var(--bg-surface-hover);border-color:var(--border-accent-strong)}
+    .hero .nocode{font-size:.8125rem;color:var(--text-fainter);margin-top:8px}
+
+    .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0 auto 64px;max-width:960px;padding:0 24px}
+    .metric-card{background:var(--bg-surface);border:1px solid var(--border-soft);border-radius:12px;padding:24px;text-align:center}
+    .metric-card .metric-value{font-size:1.75rem;font-weight:700;color:var(--accent);margin-bottom:4px}
+    .metric-card .metric-label{font-size:.8125rem;color:var(--text-faint);line-height:1.4}
+
+    section{padding:48px 0}
+    .section-label{display:inline-block;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:12px;background:var(--bg-accent-soft);padding:4px 10px;border-radius:6px}
+
+    .dim-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+    .dim-card{background:var(--bg-surface);border:1px solid var(--border-soft);border-radius:12px;padding:28px;transition:all .2s}
+    .dim-card:hover{border-color:var(--border-accent);background:var(--bg-surface-hover)}
+    .dim-card .dim-icon{font-size:1.5rem;margin-bottom:12px}
+    .dim-card h3{font-size:1rem;font-weight:600;color:var(--text-primary);margin-bottom:8px}
+    .dim-card p{font-size:.875rem;color:var(--text-muted);margin-bottom:0;line-height:1.6}
+
+    .compare-table{width:100%;border-collapse:collapse;margin-top:24px;font-size:.875rem}
+    .compare-table th,.compare-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--border-faint)}
+    .compare-table th{font-weight:600;color:var(--text-primary);background:var(--bg-surface-strong);font-size:.8125rem}
+    .compare-table td{color:var(--text-body)}
+    .compare-table .highlight-col{color:var(--accent);font-weight:600}
+    .compare-table .check{color:var(--green)}
+    .compare-table .cross{color:var(--error)}
+
+    .usecase-table{width:100%;border-collapse:collapse;margin-top:24px;font-size:.875rem}
+    .usecase-table th,.usecase-table td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border-faint)}
+    .usecase-table th{font-weight:600;color:var(--text-primary);background:var(--bg-surface-strong);font-size:.8125rem}
+    .usecase-table td{color:var(--text-body);vertical-align:top}
+    .usecase-table .improvement{color:var(--green);font-weight:600;white-space:nowrap}
+
+    .chat-demo{background:var(--bg-code-block);border:1px solid var(--border-soft);border-radius:16px;padding:32px;margin-top:24px;font-family:'Inter',sans-serif;max-width:720px}
+    .chat-demo .chat-msg{margin-bottom:16px;display:flex;gap:10px;align-items:flex-start}
+    .chat-demo .chat-msg.user{flex-direction:row-reverse}
+    .chat-demo .chat-msg .bubble{max-width:80%;padding:10px 16px;border-radius:14px;font-size:.875rem;line-height:1.5}
+    .chat-demo .chat-msg.user .bubble{background:var(--accent);color:var(--accent-on);border-bottom-right-radius:4px}
+    .chat-demo .chat-msg.agent .bubble{background:var(--bg-surface-strong);color:var(--text-body);border:1px solid var(--border-soft);border-bottom-left-radius:4px}
+    .chat-demo .chat-meta{font-size:.75rem;color:var(--text-quietest);margin-top:4px;padding-left:28px}
+    .chat-demo .chat-timestamp{text-align:center;font-size:.75rem;color:var(--green);margin-top:12px;font-weight:500}
+    .chat-demo .chat-label{font-size:.6875rem;color:var(--text-quietest);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
+
+    .methodology{background:var(--bg-surface);border:1px solid var(--border-soft);border-radius:16px;padding:36px;margin-top:24px}
+    .methodology h3{font-size:1rem;color:var(--text-primary);margin-bottom:12px}
+    .methodology ul{margin:0 0 16px 20px;padding:0}
+    .methodology li{margin-bottom:6px;font-size:.875rem;color:var(--text-muted);line-height:1.6}
+    .methodology .disclaimer{font-size:.8125rem;color:var(--text-fainter);font-style:italic;margin-top:12px;padding-top:12px;border-top:1px solid var(--border-faint)}
+
+    .faq-list{margin-top:24px}
+    .faq-item{border:1px solid var(--border-faint);border-radius:10px;margin-bottom:8px;overflow:hidden}
+    .faq-item summary{padding:16px 20px;font-weight:600;color:var(--text-primary);cursor:pointer;font-size:.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::after{content:'+';font-size:1.2rem;color:var(--accent);font-weight:400}
+    .faq-item[open] summary::after{content:'−'}
+    .faq-item .faq-answer{padding:0 20px 16px;font-size:.875rem;color:var(--text-muted);line-height:1.7}
+
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:32px}
+    .step-card{background:var(--bg-step);border:1px solid var(--border-soft);border-radius:12px;padding:28px;text-align:center;position:relative}
+    .step-card .step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--accent);color:var(--accent-on);border-radius:50%;font-weight:700;font-size:.875rem;margin-bottom:12px}
+    .step-card h4{font-size:.9375rem;font-weight:600;color:var(--text-primary);margin-bottom:8px}
+    .step-card p{font-size:.8125rem;color:var(--text-muted);margin-bottom:0;line-height:1.5}
+
+    .cta-section{text-align:center;padding:64px 0}
+    .cta-section h2{margin-bottom:12px}
+    .cta-section p{font-size:1.0625rem;color:var(--text-muted);max-width:560px;margin:0 auto 28px}
+
+    .author-line{text-align:center;font-size:.8125rem;color:var(--text-fainter);margin-top:16px;line-height:1.6}
+    .author-line strong{color:var(--text-faint);font-weight:600}
+
+    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+    .related-grid a{background:var(--bg-surface);border:1px solid var(--border-soft);border-radius:10px;padding:16px;text-decoration:none;transition:all .2s;display:block}
+    .related-grid a:hover{border-color:var(--border-accent);background:var(--bg-surface-hover)}
+    .related-grid a h4{font-size:.875rem;font-weight:600;color:var(--text-primary);margin-bottom:4px}
+    .related-grid a p{font-size:.75rem;color:var(--text-faint);margin-bottom:0}
+
+    footer{background:var(--bg-footer);border-top:1px solid var(--border-soft);padding:40px 0;text-align:center;font-size:.8125rem;color:var(--text-fainter)}
+    footer a{color:var(--text-faint)}
+    footer .footer-links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+
+    @media(max-width:768px){
+      .metrics{grid-template-columns:repeat(2,1fr)}
+      .dim-grid{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr}
+      .related-grid{grid-template-columns:1fr}
+      .compare-table,.usecase-table{font-size:.75rem}
+      .compare-table th,.compare-table td,.usecase-table th,.usecase-table td{padding:8px 10px}
+      nav .nav-actions{gap:6px}
+      nav button{padding:5px 10px;font-size:.75rem}
+    }
+    @media(max-width:480px){
+      .metrics{grid-template-columns:1fr}
+      .hero{padding:48px 0 32px}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="https://docs.coco.xyz" class="logo">
+      <span>COCO</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:20px;font-size:.8125rem">
+      <a href="https://docs.coco.xyz/use-cases/" style="color:var(--text-muted);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Use Cases</a>
+      <a href="https://docs.coco.xyz/case-studies/" style="color:var(--text-muted);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Case Studies</a>
+      <a href="https://docs.coco.xyz/channels/" style="color:var(--text-muted);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Channels</a>
+    </div>
+    <div class="nav-actions">
+      <a href="https://icoco.ai/#pricing" class="btn-primary" style="padding:8px 18px;font-size:.8125rem">See Plans & Pricing</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" style="padding:16px 0 0;font-size:.8125rem;color:var(--text-fainter)">
+    <a href="https://docs.coco.xyz/" style="color:var(--text-fainter)">Home</a> <span style="margin:0 6px">›</span>
+    <a href="https://docs.coco.xyz/use-cases/" style="color:var(--text-fainter)">Use Cases</a> <span style="margin:0 6px">›</span>
+    <span style="color:var(--text-muted)">AI Document Classifier</span>
+  </nav>
+
+  <!-- Table of Contents -->
+  <div style="background:var(--bg-surface);border:1px solid var(--border-soft);border-radius:10px;padding:16px 20px;margin-top:16px;font-size:.8125rem">
+    <strong style="color:var(--text-primary)">On this page:</strong>
+    <span style="margin:0 8px">·</span>
+    <a href="#what-is">What Is</a>
+    <span style="margin:0 8px">·</span>
+    <a href="#dimensions">Capabilities</a>
+    <span style="margin:0 8px">·</span>
+    <a href="#comparison">Comparison</a>
+    <span style="margin:0 8px">·</span>
+    <a href="#usecases">Use Cases</a>
+    <span style="margin:0 8px">·</span>
+    <a href="#chat-demo">Live Demo</a>
+    <span style="margin:0 8px">·</span>
+    <a href="#methodology">Methodology</a>
+    <span style="margin:0 8px">·</span>
+    <a href="#faq">FAQ</a>
+    <span style="margin:0 8px">·</span>
+    <a href="#how-it-works">Deployment</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>AI Document Classifier — Auto-Tag, Sort & Route 500K+ Documents Per Month</h1>
+    <p class="subtitle">Stop manually sorting thousands of documents. COCO's AI document classifier auto-tags, sorts, and routes any document by type, topic, department, language, priority, and custom taxonomy — in under 2 seconds per document. Operations teams spend 30 minutes manually sorting each document across systems, searching for the right folder, team, or workflow. COCO classifies 500K+ documents per month with 95%+ accuracy, extracts key metadata as structured JSON, and routes to the right team, folder, or system automatically. The most powerful document classification software for operations teams that need to eliminate manual triage without adding headcount.</p>
+    <div class="btn-group">
+      <a href="https://icoco.ai/#pricing" class="btn-primary">See Plans & Pricing →</a>
+      <a href="#how-it-works" class="btn-outline">See How It Works</a>
+    </div>
+    <p class="nocode">No coding required · Works with SharePoint, NetSuite, Salesforce, Workday · 2-minute connection</p>
+  </section>
+
+  <!-- Metrics -->
+  <div class="metrics">
+    <div class="metric-card">
+      <div class="metric-value">30 min → 2 sec</div>
+      <div class="metric-label">Classification Time Per Document</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">95%+</div>
+      <div class="metric-label">Classification Accuracy</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">500K docs/month</div>
+      <div class="metric-label">Processing Capacity</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">-90%</div>
+      <div class="metric-label">Misrouted Documents</div>
+    </div>
+  </div>
+
+  <!-- What Is -->
+  <section id="what-is">
+    <span class="section-label">The Problem</span>
+    <h2>What Is an AI Document Classifier?</h2>
+    <p>Document chaos is the silent productivity killer in every mid-market and enterprise organization. Invoices land in email inboxes, contracts arrive via shared drives, HR forms pile up in Slack channels, insurance claims come through customer portals, and regulatory filings trickle in from every jurisdiction. An operations team at a 500-person company handles <strong>5,000 to 20,000 documents per month</strong> — and every single one needs to be read, categorized, tagged, and routed to the right person or system. The math is unforgiving: if each document takes 30 minutes of human attention (opening the file, skimming the content, determining the type, assigning metadata, moving it to the correct folder or system, and notifying the right team), a team processing 10,000 documents per month would need 5,000 hours — the equivalent of <strong>31 full-time employees</strong> just for document triage. So teams don't do it properly. They skim. They guess. They route documents to the wrong department. And the miscategorized, misrouted, and forgotten documents create a cascade of downstream problems: unpaid invoices, missed contract deadlines, compliance violations, and operational blind spots.</p>
+    <p>Traditional solutions have not solved this. Manual sorting is inconsistent — the same document might be classified differently by two different team members, especially when they're sorting their 50th document of the day. Rules-based taggers (the kind built into most document management systems) rely on keyword matching and folder paths — they can tag a document as "Invoice" if the word "invoice" appears in the filename, but they fail when the filename is "scan005.pdf" or when the document is actually a receipt that happens to mention the word "invoice." They break when document formats change, when new document types emerge, or when your taxonomy evolves. According to AIIM (Association for Intelligent Information Management), 46% of organizations report that "inconsistent metadata and classification" is their top document management challenge, and 58% say manual sorting creates a bottleneck that delays critical business processes by an average of 3-5 days per document.</p>
+    <p>An <strong>AI document classifier</strong> is fundamentally different. It's an autonomous AI employee that reads and understands document content — not just file names or keyword matches. It ingests documents in 200+ formats (PDFs, Word docs, Excel spreadsheets, images, scanned documents, emails, JSON payloads), runs OCR on image-based and scanned documents in 50+ languages, and classifies each document by type, topic, department, language, priority, and any custom taxonomy dimension you define — in natural language, not code. It extracts key metadata (dates, amounts, party names, contract numbers, invoice IDs, PO numbers) as structured JSON that feeds directly into downstream systems. It routes classified documents to the right team, folder, or system (SharePoint, NetSuite, Salesforce, Workday) based on classification rules. And it learns from every correction — when a team member reclassifies a document, the model updates, and accuracy improves every week. Operations teams go from processing 200 documents per person per day to <strong>500K+ documents per month</strong> with 95%+ accuracy and under 2 seconds per document.</p>
+  </section>
+
+  <!-- Six Dimensions -->
+  <section id="dimensions">
+    <span class="section-label">Capabilities</span>
+    <h2>6 Dimensions of AI Document Classification Performance</h2>
+
+    <div class="dim-grid">
+      <div class="dim-card">
+        <div class="dim-icon">📄</div>
+        <h3>Multi-Format Ingestion</h3>
+        <p>The AI ingests documents in 200+ formats — PDF, Word, Excel, PowerPoint, images (JPG, PNG, TIFF), scanned documents, emails (EML, MSG, MBOX), JSON, XML, CSV, and more. Built-in OCR processes scanned and image-based documents in 50+ languages, handling multi-page documents, handwritten annotations, skewed scans, and mixed-format files. The classifier reads the full document content — not just the first page — to ensure accurate classification even when document structure is inconsistent. Inbound documents arrive via API, email, shared drives, or direct upload.</p>
+      </div>
+      <div class="dim-card">
+        <div class="dim-icon">🏷️</div>
+        <h3>Custom Taxonomy Engine</h3>
+        <p>Build your classification hierarchy in natural language — no rule-coding, no regex, no IT tickets. Define categories by department (Finance, Legal, HR, Operations), document type (Invoice, Contract, Report, Form, Correspondence), compliance category (SOX-relevant, GDPR-relevant, Retention-7-Year), confidentiality level (Public, Internal, Confidential, Restricted), and any custom dimension your organization needs. The AI reads your taxonomy descriptions like a new team member reading the onboarding guide and classifies accordingly. When your taxonomy changes — a new category, a reorganized department — update the description and the AI adapts immediately.</p>
+      </div>
+      <div class="dim-card">
+        <div class="dim-icon">📋</div>
+        <h3>Metadata Extraction</h3>
+        <p>Auto-extract structured metadata from every classified document: dates (issue date, effective date, due date, expiration date), amounts (invoice totals, contract values, PO amounts, tax), party names (vendors, clients, counterparties, employees), identifiers (contract numbers, invoice IDs, PO numbers, case numbers, claim numbers), and document-specific fields (jurisdiction for contracts, patient ID for medical records, applicant ID for admissions). Output as structured JSON for downstream systems — no manual data entry required. Metadata accuracy exceeds 95% for printed documents and 88-92% for handwritten documents.</p>
+      </div>
+      <div class="dim-card">
+        <div class="dim-icon">🔀</div>
+        <h3>Intelligent Routing</h3>
+        <p>Route classified documents to the right destination automatically based on classification rules. Route invoices to Accounts Payable in NetSuite, contracts to the Legal team's SharePoint folder, HR onboarding documents to the HRIS, insurance claims to the appropriate adjuster queue, and compliance filings to the regulatory review team. Routing rules are defined in natural language — "Route all NDAs with California jurisdiction to the West Coast Legal team" — and support conditional logic based on classification, metadata, priority, and custom taxonomy fields. Integrates with SharePoint, NetSuite, Salesforce, Workday, Google Drive, Dropbox, and any system with a REST API.</p>
+      </div>
+      <div class="dim-card">
+        <div class="dim-icon">🌐</div>
+        <h3>Language & Sentiment Detection</h3>
+        <p>Auto-detect document language across 100+ languages — the AI reads and classifies documents in French, German, Spanish, Mandarin, Japanese, Arabic, and any other language your organization handles. Beyond language detection, the classifier analyzes document sentiment and urgency: flag urgent or negative-sentiment documents (a complaint letter, a demand notice, a regulatory warning) for priority routing. Multi-language support extends to OCR — scanned documents in non-Latin scripts (Arabic, Chinese, Japanese, Korean, Cyrillic) are processed with native-language OCR models for maximum accuracy.</p>
+      </div>
+      <div class="dim-card">
+        <div class="dim-icon">📈</div>
+        <h3>Continuous Learning</h3>
+        <p>Every classification correction is a learning signal. When a team member reclassifies a document — moving an invoice from "Vendor Payment" to "Subscription Renewal," or re-tagging a contract from "NDA" to "MSA" — the AI analyzes the correction to understand why the initial classification was wrong. The model updates within 24 hours, and the same type of misclassification is unlikely to recur. Teams see a 15-25% reduction in misclassifications per quarter as the AI learns their specific taxonomy, document patterns, and edge cases. This is not a static rules engine that degrades as your business evolves — it's a learning system that gets more accurate every week.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section id="comparison">
+    <span class="section-label">Comparison</span>
+    <h2>Manual Sorting vs Rules-Based Tagger vs AI Document Classifier</h2>
+
+    <div style="overflow-x:auto">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Dimension</th>
+          <th>Manual Sorting</th>
+          <th>Rules-Based Tagger</th>
+          <th class="highlight-col">AI Document Classifier (COCO)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>File Format Coverage</td>
+          <td>Limited by what a person can open</td>
+          <td>10-20 text-based formats only</td>
+          <td class="highlight-col">200+ formats — PDF, images, scans, emails, JSON, XML</td>
+        </tr>
+        <tr>
+          <td>Classification Speed</td>
+          <td>5-30 minutes per document</td>
+          <td>10-30 seconds (keyword match only)</td>
+          <td class="highlight-col">Under 2 seconds per document (full content analysis)</td>
+        </tr>
+        <tr>
+          <td>Classification Accuracy</td>
+          <td>85-90% (fatigue, inconsistency)</td>
+          <td>60-75% (keyword-only, no context understanding)</td>
+          <td class="highlight-col">95%+ (content-aware, continuous learning)</td>
+        </tr>
+        <tr>
+          <td>Taxonomy Customization</td>
+          <td>Manual folder structure — ad hoc</td>
+          <td>IT-dependent — weeks to update regex rules</td>
+          <td class="highlight-col">Natural language — update descriptions instantly, no code</td>
+        </tr>
+        <tr>
+          <td>Metadata Extraction</td>
+          <td>Manual data entry — 5-10 min per document</td>
+          <td>Basic regex — dates and amounts only</td>
+          <td class="highlight-col">Full extraction — dates, amounts, entities, identifiers as JSON</td>
+        </tr>
+        <tr>
+          <td>Intelligent Routing</td>
+          <td>Manual email or folder move</td>
+          <td>Static folder rules — file extension only</td>
+          <td class="highlight-col">Content-based routing to teams, folders, and systems</td>
+        </tr>
+        <tr>
+          <td>Language Support</td>
+          <td>Limited to team's language skills</td>
+          <td>English only (most systems)</td>
+          <td class="highlight-col">100+ languages with native OCR for non-Latin scripts</td>
+        </tr>
+        <tr>
+          <td>Learning & Adaptation</td>
+          <td>No systematic improvement</td>
+          <td>Static rules — accuracy degrades as business evolves</td>
+          <td class="highlight-col">Continuous learning from every correction — improves weekly</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section id="usecases">
+    <span class="section-label">Real-World Scenarios</span>
+    <h2>10 Document Classification Scenarios COCO Handles</h2>
+
+    <div style="overflow-x:auto">
+    <table class="usecase-table">
+      <thead>
+        <tr>
+          <th>Classification Scenario</th>
+          <th>Before COCO</th>
+          <th>With COCO AI Document Classifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Invoice Processing</td>
+          <td>3-day manual sorting backlog — invoices sit in email inboxes, AP manually enters data</td>
+          <td class="improvement">Instant classification, metadata extracted, auto-routed to AP in NetSuite</td>
+        </tr>
+        <tr>
+          <td>Contract Intake</td>
+          <td>Legal team manually reviews every inbound contract — 40+ min per contract</td>
+          <td class="improvement">AI classifies by type (NDA, MSA, SOW), jurisdiction, urgency — under 2 sec each</td>
+        </tr>
+        <tr>
+          <td>HR Onboarding Documents</td>
+          <td>HR manually files I-9s, W-4s, offer letters, direct deposit forms — 25 min per new hire</td>
+          <td class="improvement">Auto-classified by document type, employee, compliance category — routed to HRIS</td>
+        </tr>
+        <tr>
+          <td>Insurance Claims</td>
+          <td>Adjusters spend 40% of time sorting claim documents — police reports, photos, estimates</td>
+          <td class="improvement">Auto-classified by claim type, severity, policy number — routed to adjuster queue</td>
+        </tr>
+        <tr>
+          <td>Legal Discovery</td>
+          <td>Paralegals manually tag thousands of documents for relevance, privilege, and issue</td>
+          <td class="improvement">AI pre-tags by relevance, privilege, issue — paralegals review instead of tag from scratch</td>
+        </tr>
+        <tr>
+          <td>Regulatory Filings</td>
+          <td>Compliance team manually sorts filings by jurisdiction, regulation, and deadline</td>
+          <td class="improvement">Auto-classified by regulation, deadline, jurisdiction — compliance reviews flagged items only</td>
+        </tr>
+        <tr>
+          <td>Academic Submissions</td>
+          <td>Admissions team manually sorts transcripts, essays, recommendations — 20 min per applicant</td>
+          <td class="improvement">Auto-sorted by applicant, document type, program — admissions reviews complete files</td>
+        </tr>
+        <tr>
+          <td>Medical Records</td>
+          <td>Medical records staff manually file lab results, referrals, consent forms — backlog of 5-7 days</td>
+          <td class="improvement">AI classifies by patient, document type, urgency — auto-filed to EHR system</td>
+        </tr>
+        <tr>
+          <td>Financial Statements</td>
+          <td>Finance manually categorizes bank statements, tax forms, audit reports across entities</td>
+          <td class="improvement">Auto-classified by entity, period, statement type — metadata extracted for financial systems</td>
+        </tr>
+        <tr>
+          <td>Customer Correspondence</td>
+          <td>Support team manually routes hundreds of emails to departments — 4-hour response delay</td>
+          <td class="improvement">AI classifies by topic, sentiment, priority — routes instantly to the right department</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- Chat Demo -->
+  <section id="chat-demo">
+    <span class="section-label">In Practice</span>
+    <h2>See It in Action: Classifying 200 Mixed Documents in Real Time</h2>
+    <p style="font-size:.8125rem;color:var(--text-quietest);margin-bottom:16px">Representative conversation showing COCO's AI document classifier processing a batch of 200 mixed documents — invoices, contracts, HR forms, and expense reports — uploaded by an operations manager.</p>
+
+    <div class="chat-demo">
+      <div class="chat-msg user">
+        <div style="text-align:right">
+          <div class="chat-label">👤 Sarah · Operations Manager</div>
+          <div class="bubble">Just uploaded this week's document batch — 200 files from email, the shared drive, and the vendor portal. Mix of invoices, contracts, HR onboarding forms, and expense reports from the sales team. Need these classified and routed ASAP — AP is waiting on those invoices.</div>
+        </div>
+      </div>
+      <div class="chat-msg agent">
+        <div>
+          <div class="chat-label">🤖 COCO · Document Classifier</div>
+          <div class="bubble">Got it, Sarah. Processing all 200 documents now. Running OCR on scanned files, analyzing content for classification, and extracting metadata. Let me show you what I'm finding as I go.</div>
+        </div>
+      </div>
+      <div class="chat-meta">COCO scans: 200 documents received (43 invoices from 18 vendors, 38 contracts including NDAs/MSAs/SOWs, 29 HR onboarding forms across 7 new hires, 52 expense reports from 12 sales team members, 38 mixed files including correspondence and statements). OCR running on 47 scanned/image-based documents. Classifying against taxonomy: Department (Finance, Legal, HR, Sales, Operations) × Document Type × Priority × Compliance Category.</div>
+      <div class="chat-msg agent">
+        <div>
+          <div class="chat-label">🤖 COCO · Document Classifier</div>
+          <div class="bubble">Classification complete — all 200 documents processed in <strong>2 minutes 47 seconds</strong>. Here's the breakdown:<br><br>📄 <strong>43 Invoices</strong> — Classified by vendor, amount, due date. 6 flagged as urgent (due within 7 days). Metadata extracted: invoice numbers, PO numbers, line-item totals, tax amounts. Routed to Accounts Payable queue in NetSuite.<br><br>📄 <strong>38 Contracts</strong> — 12 NDAs, 9 MSAs, 11 SOWs, 4 amendments, 2 termination letters. Classified by jurisdiction (California, Delaware, New York, UK), counterparty, and confidentiality level. 3 flagged as high-priority (expiration within 30 days). Routed to Legal team's SharePoint.<br><br>📄 <strong>29 HR Forms</strong> — 7 I-9s, 7 W-4s, 7 offer letters, 6 direct deposit forms, 2 emergency contact forms. Auto-matched to employee records. Routed to HRIS with metadata for each new hire.<br><br>📄 <strong>52 Expense Reports</strong> — Classified by employee, department, total amount. 4 flagged for policy review (entertainment expenses exceeding per-person limit). Routed to Finance team.<br><br>📄 <strong>38 Mixed Files</strong> — 14 client correspondence (routed to account managers), 12 bank statements (routed to Finance), 8 compliance certificates (routed to Compliance), 4 insurance documents (routed to Operations).<br><br><strong>0 documents unclassified. 12 documents below confidence threshold (95%) — routed to human review queue with AI's best-guess classification shown.</strong></div>
+        </div>
+      </div>
+      <div class="chat-msg user">
+        <div style="text-align:right">
+          <div class="chat-label">👤 Sarah · Operations Manager</div>
+          <div class="bubble">Incredible. Can you show me the metadata for those 6 urgent invoices? AP will want the PO numbers and amounts.</div>
+        </div>
+      </div>
+      <div class="chat-msg agent">
+        <div>
+          <div class="chat-label">🤖 COCO · Document Classifier</div>
+          <div class="bubble">Here are the 6 urgent invoices (due within 7 days):<br><br>1. Inv-2026-0842 | Vendor: Thomson Industries | Amount: $47,300 | PO: TH-2026-441 | Due: June 8, 2026<br>2. Inv-2026-0911 | Vendor: Meridian Supply Co. | Amount: $12,850 | PO: MS-2026-892 | Due: June 9, 2026<br>3. Inv-2026-0877 | Vendor: Pacific Logistics | Amount: $8,920 | PO: PL-2026-331 | Due: June 10, 2026<br>4. Inv-2026-0893 | Vendor: Atlas Consulting Group | Amount: $31,600 | PO: AC-2026-702 | Due: June 5, 2026<br>5. Inv-2026-0905 | Vendor: NorthStar Engineering | Amount: $22,150 | PO: NE-2026-128 | Due: June 11, 2026<br>6. Inv-2026-0922 | Vendor: ClearView Analytics | Amount: $15,400 | PO: CV-2026-556 | Due: June 7, 2026<br><br>All 6 already routed to the AP dashboard in NetSuite with full invoice images and extracted line items. The first one (Atlas Consulting, due June 5) has a payment hold flag from their contract — routed with a note to AP to verify before payment.</div>
+        </div>
+      </div>
+      <div class="chat-msg user">
+        <div style="text-align:right">
+          <div class="chat-label">👤 Sarah · Operations Manager</div>
+          <div class="bubble">Perfect. And those 12 low-confidence documents — can I review them now?</div>
+        </div>
+      </div>
+      <div class="chat-msg agent">
+        <div>
+          <div class="chat-label">🤖 COCO · Document Classifier</div>
+          <div class="bubble">Absolutely. The 12 review-queue documents are in your dashboard now, each showing my best-guess classification and the reason for low confidence. The most common reason: 7 are scanned documents with significant handwriting or image noise that reduced OCR confidence on key fields. I've highlighted the uncertain fields — you can confirm or correct with one click. Every correction you make will train the model for future batches.<br><br>By the way, this entire batch — 200 documents classified, metadata extracted, and routed — would have taken an estimated <strong>100 person-hours</strong> manually. The AI completed it in under 3 minutes. The 12 review-queue items should take you about 15 minutes to verify.</div>
+        </div>
+      </div>
+      <div class="chat-timestamp">Batch uploaded 08:15 · Classification complete 08:18 · Total: 2 minutes 47 seconds for 200 documents</div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section id="methodology">
+    <span class="section-label">Methodology</span>
+    <h2>How These Numbers Are Calculated</h2>
+
+    <div class="methodology">
+      <h3>Data Sources</h3>
+      <ul>
+        <li><strong>COCO Production Data (2026)</strong> — Aggregated and anonymized from 30+ operations teams running COCO's document classifier in production environments. Sample: 3.2 million+ documents across legal, finance, HR, insurance, healthcare, and professional services sectors over a 12-month period. Organizations range from mid-market (50-500 employees) to enterprise (500-10,000 employees). Classification metrics (accuracy, speed, throughput) measured across all document types and taxonomies in production.</li>
+        <li><strong>AIIM Industry Watch: Intelligent Information Management (2025)</strong> — The Association for Intelligent Information Management's annual survey of 600+ information management professionals. Reports that 46% of organizations cite "inconsistent metadata and classification" as their top document management challenge, and 58% say manual document sorting creates process bottlenecks averaging 3-5 days per document. 72% of organizations report that their current document classification approach is "mostly manual."</li>
+        <li><strong>McKinsey Global Institute — Knowledge Worker Productivity Study (2024)</strong> — Analysis of time allocation across 50,000+ knowledge workers in 15 industries. Finds that document processing and triage consumes 19% of the average knowledge worker's time — the equivalent of one full day per week. Manual classification and routing specifically accounts for 4.2 hours per worker per week. AI-augmented document classification reduces this to under 1 hour per week.</li>
+        <li><strong>IDC — Intelligent Document Processing Market Forecast (2025)</strong> — Market analysis of the intelligent document processing (IDP) sector, projecting 28% CAGR through 2028. Reports that organizations processing 10,000+ documents per month can reduce document processing costs by 60-80% through AI classification, and that classification accuracy for AI-based systems (95%+) significantly exceeds rules-based approaches (60-75%) and manual sorting (85-90%).</li>
+        <li><strong>Gartner — Intelligent Document Processing Magic Quadrant Analysis (2025)</strong> — Evaluates the IDP market and forecasts that by 2027, 45% of mid-market and enterprise organizations will use AI for document classification and routing, up from 12% in 2025. Notes that continuous learning (model improvement from user corrections) is the key differentiator between AI-native and rules-based document processing platforms.</li>
+        <li><strong>COCO Document Classifier Case Studies (2025-2026)</strong> — Proprietary data from COCO's 500+ operations team deployments: 90% reduction in misrouted documents, classification time reduced from 30 minutes to under 2 seconds per document, metadata extraction accuracy of 95%+ for printed documents and 88-92% for handwritten documents, and 15-25% quarterly improvement in classification accuracy through continuous learning.</li>
+      </ul>
+
+      <h3>How Key Metrics Are Measured</h3>
+      <ul>
+        <li><strong>Classification Time Per Document (30 min → 2 sec)</strong> — The total time from document receipt to classification and routing. Pre-COCO baseline based on AIIM and McKinsey data: manual document sorting takes 5-30 minutes per document depending on document length, complexity, ambiguity, and sorter expertise. Includes time to open the file, read/skim content, determine classification, assign metadata tags, move to the correct folder or system, and notify the relevant team. Post-COCO: AI processes documents in under 2 seconds each (content ingestion + OCR if needed + classification + metadata extraction + routing). The 900x improvement represents the aggregate across all document types — simple one-page documents may classify faster; complex multi-page legal documents may take 3-5 seconds.</li>
+        <li><strong>Classification Accuracy (95%+)</strong> — The percentage of documents correctly classified to their ground-truth category on first pass. Measured across all document types in COCO production deployments, excluding documents intentionally routed to human review (below configurable confidence threshold). Accuracy is calculated monthly: (correctly classified documents) / (total classified documents - human review queue documents). The 95%+ figure represents the weighted average across all deployment sizes and industries. Continuous learning contributes 2-4 percentage points of accuracy improvement per quarter as the model learns from team corrections.</li>
+        <li><strong>Processing Capacity (500K docs/month)</strong> — The maximum sustained throughput of COCO's document classifier measured across production deployments. Calculated as the number of documents that can be ingested, OCR-processed if needed, classified, have metadata extracted, and be routed — 24/7, with no degradation in classification accuracy at scale. The 500K figure represents the upper bound of current production deployments; individual throughput varies based on document size, format mix (scanned vs. digital), and taxonomy complexity. The AI scales linearly with compute resources — higher throughput is achievable for organizations with larger document volumes.</li>
+        <li><strong>Misrouted Documents (-90%)</strong> — The reduction in documents routed to the wrong team, folder, or system. Pre-COCO baseline from AIIM data: manual sorting results in 8-15% of documents being misfiled or misrouted (wrong department, wrong folder, wrong workflow). Post-COCO: AI classification with content-aware routing reduces misrouting to under 1.5%. The 90% reduction represents the shift from ~10% misrouting (manual) to ~1% misrouting (AI). The remaining 1% primarily consists of edge cases: highly ambiguous documents, novel document types not yet in the taxonomy, and documents with conflicting classification signals. These edge cases are routed to the human review queue based on configurable confidence thresholds.</li>
+      </ul>
+
+      <h3>Limitations & Caveats</h3>
+      <ul>
+        <li>Results vary by document complexity, taxonomy structure, and historical data quality. Organizations with well-defined taxonomies, consistent document naming conventions, and clean document repositories see the fastest time-to-value. Organizations with highly specialized or niche document types (e.g., engineering drawings, scientific research papers, regulatory filings in uncommon jurisdictions) may require additional calibration and training data.</li>
+        <li>OCR accuracy varies by document quality. Printed and digital-native documents achieve 98%+ OCR accuracy; clean handwritten documents achieve 88-92%; damaged, skewed, or low-resolution scanned documents may achieve 75-85% OCR accuracy. For documents where OCR accuracy on critical fields (e.g., dollar amounts, contract numbers) falls below the configured threshold, the AI flags those fields for human verification while still classifying the document type based on available content.</li>
+        <li>The AI requires approximately 1 week of initial training on your taxonomy, sample documents, and classification rules. During this period, it operates in suggestion mode — proposing classifications for human review without autonomous routing. The transition to autonomous mode occurs when classification accuracy meets your team's configured threshold (typically 90-95%).</li>
+        <li>Classification performance for novel document types not represented in training data may be lower during the first week of exposure. As team members correct misclassifications of new document types, the model learns and accuracy normalizes. We recommend proactively adding new document types to the taxonomy as they emerge in your organization.</li>
+        <li>As with any AI system, edge cases exist. COCO maintains a configurable confidence threshold — documents below this threshold are routed to the human review queue with the AI's best-guess classification shown. We recommend a starting threshold of 90% confidence and adjusting based on your team's tolerance for misclassification risk and available review capacity. Most teams see the review queue shrink from ~8% of documents in month 1 to ~2% by month 6 as the AI learns their specific taxonomy and document patterns.</li>
+      </ul>
+
+      <div class="disclaimer">
+        Data as of June 2026. Methodology details and raw data available at docs.coco.xyz. COCO recommends independent evaluation with your team's specific document mix, taxonomy complexity, and existing classification accuracy before projecting ROI. Results are based on production deployments; individual results may vary.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is an AI document classifier and how does it work?</summary>
+        <div class="faq-answer">An AI document classifier is an autonomous AI employee that reads, understands, and categorizes documents based on their actual content — not just file names, folder paths, or keyword matches. It ingests documents in 200+ formats (PDF, Word, Excel, images, scanned documents, emails, JSON), runs OCR on image-based and scanned documents in 50+ languages, and classifies each document by type, topic, department, language, priority, and any custom taxonomy dimensions your team defines in natural language. Unlike rules-based taggers that match keywords (e.g., "contains the word 'invoice' = file as Invoice"), COCO's AI reads the full document content and understands context — it distinguishes an NDA from an MSA, a W-4 from an I-9, and a vendor invoice from a customer receipt, even when file names are ambiguous or missing. It extracts key metadata (dates, amounts, party names, identifiers) as structured JSON and routes documents to the right team, folder, or downstream system. And it learns from every correction: when a team member reclassifies a document, the model updates, and the same misclassification is unlikely to recur. The difference is fundamental — a rules engine flags what you tell it to look for; an AI document classifier finds what you need classified, even when the document doesn't match a predefined pattern.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What file formats does the AI Document Classifier support?</summary>
+        <div class="faq-answer">COCO's AI Document Classifier supports 200+ file formats, covering virtually every document type encountered in business operations. Core office formats include PDF, DOCX, XLSX, PPTX, RTF, ODT, and ODS — the classifier reads the full content, not just embedded metadata. Image formats (JPG, PNG, TIFF, BMP, GIF) are processed through built-in OCR that extracts text from image-based and scanned documents in 50+ languages with 98%+ accuracy on printed text. Email formats (EML, MSG, MBOX) enable classification of both email bodies and their attachments as separate documents. Structured and semi-structured formats (JSON, XML, CSV, TSV) are ingested natively, enabling classification of data exports, API responses, and system-generated reports. For specialized use cases, the classifier handles CAD files (DWG, DXF), engineering drawings, and compressed archives (ZIP, RAR) with embedded documents extracted and classified individually. The OCR engine handles multi-page documents, mixed-format files (e.g., a PDF with embedded images), skewed scans, and low-resolution images. For handwritten documents, OCR accuracy ranges from 85-92% depending on legibility; critical fields with uncertain OCR output are flagged for human verification while the document type classification proceeds on available content signals.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can I create my own custom taxonomy or classification categories?</summary>
+        <div class="faq-answer">Yes — and this is one of the most important advantages COCO has over rules-based and template-based classification systems. You define your taxonomy in natural language, exactly as you would describe your document categories to a new team member. For example: "Invoices are documents issued by a vendor requesting payment. They contain an invoice number, issue date, due date, vendor name and address, line items with descriptions and amounts, subtotal, tax, and total due. Purchase Orders are documents issued by our company to a vendor authorizing a purchase. They contain a PO number, date, vendor name, billing and shipping addresses, line items, quantities, unit prices, and total amount." The AI reads these descriptions and classifies documents accordingly — no regex patterns, no keyword lists, no IT involvement. You can build multi-level hierarchical taxonomies with dimensions for department (Finance, Legal, HR, Operations, Sales), document type (Invoice, Contract, Report, Form, Correspondence), compliance category (SOX-relevant, GDPR-relevant, HIPAA-relevant, Retention-7-Year), confidentiality level (Public, Internal, Confidential, Restricted), and any other dimension your organization requires. When your taxonomy changes — a new regulatory category, a departmental reorganization, a new document type — update the description in plain language and the AI adapts immediately. <a href="https://docs.coco.xyz/use-cases/">Learn more about COCO use cases</a>.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How accurate is the AI document classifier compared to manual sorting?</summary>
+        <div class="faq-answer">COCO's AI Document Classifier consistently achieves 95%+ classification accuracy in production, outperforming manual sorting on both accuracy and consistency. Manual sorting accuracy varies from 85-90% depending on the sorter's experience, fatigue level, and the complexity of the document (AIIM 2025 Industry Watch). Two different team members sorting the same document will assign it to different categories 10-15% of the time — especially for ambiguous documents, documents that span multiple categories, or documents with misleading file names. The AI applies classification logic consistently to every document and improves over time through continuous learning: when a team member reclassifies a document, the AI analyzes the correction and updates its model, typically achieving 2-4 percentage points of accuracy improvement per quarter. In COCO production data, teams see misrouted documents drop by 90% compared to their previous manual sorting process. The AI also catches edge cases that human sorters consistently miss — such as a document named "scan005.pdf" that is actually a signed MSA, or an email attachment that is a regulatory filing rather than general correspondence. However, the AI is not a replacement for human judgment: the recommended workflow is AI performs exhaustive first-pass classification with high-confidence documents routed automatically, while low-confidence documents (typically 2-5% of volume) are routed to a human review queue with the AI's best-guess classification shown. This human-in-the-loop approach delivers the speed of AI classification with the judgment of experienced team members on the documents that matter most.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What happens when the AI misclassifies a document?</summary>
+        <div class="faq-answer">When the AI misclassifies a document, correction is immediate and contributes directly to model improvement — this is not a static system where the same mistake repeats indefinitely. Any team member can reclassify a document in the COCO dashboard with a single click: select the correct category from the taxonomy, and the document is instantly rerouted to the appropriate team, folder, or system. Behind the scenes, every reclassification is a learning event — the AI analyzes why the initial classification was wrong (was the document ambiguous, was the category description unclear, was the OCR output corrupted on a key field, was this a novel document type not well-represented in training data?) and updates its classification model within 24 hours. The same type of document is unlikely to be misclassified again. Teams typically see a 15-25% reduction in total misclassifications per quarter as the model learns their specific taxonomy, document patterns, and edge cases. For high-stakes documents (compliance filings, litigation documents, regulatory submissions, financial disclosures), you can set a higher confidence threshold — documents below the threshold are automatically routed to a human review queue before final classification, ensuring critical documents always receive appropriate scrutiny. This process also surfaces taxonomy gaps: if team members are consistently reclassifying a certain document type, it may indicate that a new taxonomy category is needed or an existing category description needs clarification. COCO generates taxonomy health reports that identify these patterns so your classification system improves on both the AI and taxonomy sides simultaneously.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- How to Deploy -->
+  <section id="how-it-works">
+    <span class="section-label">Deployment</span>
+    <h2>How to Deploy an AI Document Classifier</h2>
+
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Connect COCO to Your Document Sources</h4>
+        <p>Link COCO to your document repositories — SharePoint, Google Drive, Dropbox, email inboxes, ERP-attached documents, SFTP servers, and any REST API endpoint. Standard integrations — 2 minutes, no custom development. The AI begins ingesting existing documents immediately to understand your document patterns.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Define Your Taxonomy & Classification Rules</h4>
+        <p>Describe your classification categories in natural language — by department, document type, compliance category, confidentiality level, and any custom dimensions. Upload sample documents to calibrate. The AI learns the distinction between categories from your descriptions, not from regex patterns.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Train & Calibrate (~1 Week)</h4>
+        <p>The AI processes your historical documents and begins classifying. Your team reviews classifications, corrects misclassifications, and refines taxonomy descriptions. The AI updates its models from every correction. When accuracy meets your threshold (typically 95%+), you switch to autonomous mode.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h4>Go Live With Automated Classification</h4>
+        <p>COCO begins classifying and routing every inbound document autonomously. Your team monitors via the classification dashboard, reviews low-confidence documents, and provides corrections that further train the model. Classification accuracy improves every week through continuous learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to Auto-Classify Every Document That Enters Your Organization?</h2>
+    <p>Deploy an AI document classifier today. Works with your existing document sources and systems. No coding required.</p>
+    <a href="https://icoco.ai/#pricing" class="btn-primary" style="font-size:1.0625rem;padding:14px 36px">See Plans & Pricing →</a>
+    <div class="author-line">
+      By <strong>COCO Engineering Team</strong> · Edited by Khai Zou · Published June 3, 2026. Data sourced from 30+ operations teams using COCO's document classifier in production. COCO maintains open-source tools at <a href="https://github.com/coco-xyz">github.com/coco-xyz</a>.
+    </div>
+    <div class="related-section"><h2>Related Use Cases</h2><div class="related-grid"><a href="https://docs.coco.xyz/use-cases/ai-expense-auditor/"><h4>AI Expense Auditor: 100% Audit Coverage</h4><p>Audit 100% of expense reports with AI — automatic policy enforcement</p></a><a href="https://docs.coco.xyz/use-cases/ai-nda-generator/"><h4>AI NDA Generator: 60-Second NDAs</h4><p>Generate jurisdiction-specific NDAs with automatic clause alignment</p></a><a href="https://docs.coco.xyz/use-cases/ai-knowledge-base-builder/"><h4>AI Knowledge Base Builder: 50 Articles/Hour</h4><p>Turn resolved tickets into search-optimized help articles</p></a><a href="https://docs.coco.xyz/use-cases/ai-job-description-writer/"><h4>AI Job Description Writer: Bias-Free JDs</h4><p>Create inclusive, SEO-optimized job descriptions in 10 minutes</p></a><a href="https://docs.coco.xyz/use-cases/ai-follow-up-writer/"><h4>AI Follow-Up Writer: +29% Response Rates</h4><p>Generate personalized sales follow-up emails from meeting context</p></a></div></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://docs.coco.xyz">Home</a>
+    <a href="https://docs.coco.xyz/use-cases/">Use Cases</a>
+    <a href="https://docs.coco.xyz/case-studies/">Case Studies</a>
+    <a href="https://github.com/coco-xyz">GitHub</a>
+    <a href="https://twitter.com/CocoAIxyz">Twitter</a>
+  </div>
+  <p>&copy; 2026 COCO. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
